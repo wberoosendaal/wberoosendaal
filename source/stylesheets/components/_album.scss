@@ -1,0 +1,23 @@
+.album {
+  width: 100vw;
+  height: auto;
+  background-color: #f8ebd3;
+  padding: 1px 0px 40px 0px;
+  color: #4e4d4d;
+  font-size: 16px;
+
+  & h3 {
+    font-size: 25px;
+    margin: 40px 0px 25px 150px;
+  }
+}
+
+.thumb {
+  width: 152px;
+  height: 90px;
+  margin: 7px;
+}
+
+h4 {
+  text-align: center;
+}

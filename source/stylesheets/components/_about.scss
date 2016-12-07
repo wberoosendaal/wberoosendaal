@@ -1,0 +1,27 @@
+.about {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  color: #4e4d4d;
+  font-size: 16px;
+
+  & h3 {
+    font-size: 25px;
+    margin: 40px 0px 25px 150px;
+  }
+}
+
+.content {
+  margin: 10px 0px 40px 0px;
+  text-align: justify;
+
+  & #part-1 {
+    width: 550px;
+    margin-right: 30px;
+  }
+
+  & #part-2 {
+    width: 550px;
+    margin-left: 30px;
+  }
+}
