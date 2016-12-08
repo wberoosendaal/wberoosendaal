@@ -16,7 +16,7 @@
   }
 
   & p {
-    font-size: 16px;
+    font-size: 15px;
     margin: 1px;
   }
 
@@ -75,4 +75,27 @@
   background-color: grey;
 }
 
+@media screen and (max-width: 624px) {
+  .map {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 624px) and (max-width: 762px) {
+  .footer-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 762px) and (max-width: 1146px) {
+  .footer-content {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1146px) and (max-width: 1408px) {
+  .footer-content {
+    width: 40%;
+  }
+}
 
