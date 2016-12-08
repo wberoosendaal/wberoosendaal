@@ -79,6 +79,14 @@
   .map {
     display: none !important;
   }
+
+  .footer-content {
+    padding: 20px 25px 25px 20px;
+
+    & h6 {
+      margin: 75px -65px 0px 0px;
+    }
+  }
 }
 
 @media only screen and (min-width: 624px) and (max-width: 762px) {
