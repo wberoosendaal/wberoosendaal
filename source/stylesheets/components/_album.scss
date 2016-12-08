@@ -21,3 +21,72 @@
 h4 {
   text-align: center;
 }
+
+@media only screen and (max-width: 500px) {
+  .album {
+
+    & h3 {
+      margin: 40px 0px 25px 15px;
+    }
+  }
+  .album .container .row .col-xs-6 {
+    width: 45%;
+  }
+
+  .thumb {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .thumb {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 663px) {
+  .thumb {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 663px) {
+  .album .container .row .col-xs-6 {
+    width: 30%;
+  }
+
+  .album h3 {
+    margin: 40px 0px 25px 15px;
+  }
+}
+
+@media only screen and (min-width: 663px) and (max-width: 992px) {
+  .album .container .row .col-md-2 {
+    width: 22%;
+  }
+
+  .album h3 {
+    margin: 40px 0px 25px 30px;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 992px) {
+  .album h3 {
+    margin: 40px 0px 25px 80px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .album .container .row .col-md-2 {
+    width: 18%;
+  }
+
+  .album h3 {
+    margin: 40px 0px 25px 90px;
+  }
+
+  .thumb {
+    margin-bottom: 25px;
+  }
+}
