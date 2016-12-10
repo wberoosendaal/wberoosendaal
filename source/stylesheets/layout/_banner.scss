@@ -1,5 +1,26 @@
 .banner {
   width: 100vw;
-  height: 450px;
+  height: 500px;
   background-color: #6abe71;
 }
+
+.carousel-inner {
+
+  & .item img {
+    height: 500px;
+    width: 100vw;
+  }
+
+  & .carousel-caption {
+    margin-bottom: 150px;
+  }
+
+  & h3 {
+    font-size: 65px;
+  }
+
+  & h5 {
+    font-size: 50px;
+  }
+}
+

@@ -14,9 +14,9 @@
 
   <div class="contact-form">
     <form action="https://getsimpleform.com/messages?form_api_token=9b160861a87bad8d14eecb0be12d16dd" method="post">
-      <input type="text" name="name" id="name" placeholder="Uw Naam" />
+      <input type="text" name="name" id="name" placeholder="Uw Naam">
       <br>
-      <input type="email" name="email" id="email" placeholder="Uw Emailadres" />
+      <input type="email" name="email" id="email" placeholder="Uw Emailadres">
       <br>
       <textarea rows="7" name="message" id="message" placeholder="Uw Bericht"></textarea>
       <button type="submit" data-toggle="modal" data-target="#contactModal" class="main-button" id="button-submit">Verzend</button>
@@ -27,9 +27,22 @@
 
   </div>
 
-  <div id="contactModal" class="modal fade" role="dialog">
+<!--   <div id="map-modal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Image title</h4>
+        </div>
+        <div class="modal-body">
+          <#%= image_tag ("/images/jacht1.jpg"), class: "img-responsive" %>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="contact-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Bedankt!</h4>
