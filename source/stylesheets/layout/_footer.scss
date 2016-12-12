@@ -1,5 +1,5 @@
 .footer {
-  background-color: #586D9D;
+  background-color: #58699f;
   width: 100vw;
   height: 390px;
   color: white;
@@ -8,27 +8,28 @@
 }
 
 .footer-content {
-  padding: 20px 25px 25px 70px;
+  padding: 20px 25px 0px 45px;
 
   & h3 {
     font-size: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 45px;
   }
 
   & p {
-    font-size: 15px;
+    font-size: 13px;
     margin: 1px;
   }
 
   & h6 {
-    font-size: 11px;
-    margin: 75px -65px 0px;
+    font-size: 10px;
+    margin: 75px -65px 0px 0px;
   }
 }
 
 .contact-form {
-  padding: 45px 0px 0px 85px;
+  padding: 50px 0px 0px 85px;
   color: #4e4d4d;
+  font-size: 13px;
 
   & form {
     width: 300px;
@@ -37,29 +38,60 @@
   & #name {
     margin-bottom: 10px;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 300px;
-    border: 1px solid grey;
+    border: none;
   }
 
   & #email {
     margin-bottom: 10px;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 300px;
-    border: 1px solid grey;
+    border: none;
   }
 
   & #message {
     margin-bottom: 10px;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 300px;
-    border: 1px solid grey;
+    border: none;
   }
 
   & #button-submit {
-    margin-left: 215px;
+    margin-left: 218px;
+    border: none;
+    font-size: 16px;
+  }
+}
+
+.map {
+  height: 390px;
+  width: 700px;
+  position: relative;
+
+  & .clickable-map {
+    background-color: rgba(0, 6, 255, 0.35);
+    border-radius: 50%;
+    border: 3px solid white;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 447px;
+    bottom: 0px;
+    top: 218px;
+  }
+
+  & .clickable-map:hover{
+    cursor: pointer;
+  }
+
+  & #search-plus {
+    position: absolute;
+    font-size: 50px;
+    left: 27px;
+    top: 23px;
   }
 }
 
@@ -67,12 +99,6 @@
   .contact-form {
     display: none !important;
   }
-}
-
-.map {
-  height: 390px;
-  width: 700px;
-  background-color: grey;
 }
 
 @media screen and (max-width: 624px) {
@@ -93,11 +119,69 @@
   .footer-content {
     width: 100%;
   }
+
+  .map {
+
+    & .clickable-map {
+      left: 204px;
+      top: 272px;
+    }
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 880px) {
+  .map {
+
+    & .clickable-map {
+      left: 300px;
+      top: 260px;
+    }
+  }
 }
 
 @media only screen and (min-width: 762px) and (max-width: 1146px) {
   .footer-content {
     width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1175px) {
+  .map {
+
+    & .clickable-map {
+      left: 200px;
+      top: 275px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1085px) and (max-width: 1175px) {
+  .map {
+
+    & .clickable-map {
+      left: 275px;
+      top: 260px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1175px) and (max-width: 1200px) {
+  .map {
+
+    & .clickable-map {
+      left: 363px;
+      top: 240px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1275px) {
+  .map {
+
+    & .clickable-map {
+      left: 363px;
+      top: 240px;
+    }
   }
 }
 

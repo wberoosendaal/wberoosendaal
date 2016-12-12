@@ -2,3 +2,18 @@
   color: #4e4d4d;
   text-align: center;
 }
+
+#map-modal {
+  color: #4e4d4d;
+  text-align: center;
+
+  & .map-image {
+    width: 800px;
+    height: 1000px;
+  }
+
+  & .modal-dialog {
+    width: 875px;
+    height: 1050px;
+  }
+}

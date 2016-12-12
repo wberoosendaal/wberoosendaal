@@ -24,3 +24,68 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .banner {
+    height: 250px;
+  }
+
+  .carousel-inner {
+
+    & .item img {
+      height: 250px;
+    }
+
+    & .carousel-caption {
+      margin-bottom: 50px;
+    }
+
+    & h3 {
+      font-size: 30px;
+    }
+
+    & h5 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 992px) {
+.banner {
+    height: 375px;
+  }
+
+  .carousel-inner {
+
+    & .item img {
+      height: 375px;
+    }
+
+    & .carousel-caption {
+      margin-bottom: 100px;
+    }
+
+    & h3 {
+      font-size: 40px;
+    }
+
+    & h5 {
+      font-size: 30px;
+    }
+  }
+}
+
+
+// @media only screen and (min-width: 992px) and (max-width: 1200px) {
+//   .album .container .row .col-md-2 {
+//     width: 18%;
+//   }
+
+//   .album h3 {
+//     margin: 40px 0px 25px 90px;
+//   }
+
+//   .thumb {
+//     margin-bottom: 25px;
+//   }
+// }
+
