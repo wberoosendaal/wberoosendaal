@@ -9,11 +9,13 @@
   color: #fff;
   position: absolute;
   z-index: 12;
-  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
   left: 0;
-  width: 100%;
+  right: 0;
+  top: 30%;
   text-align: center;
-
+  width: 550px;
 
   & h1 {
     font-size: 65px;
@@ -30,13 +32,9 @@
     height: 500px;
     width: 100vw;
   }
-
-  & .carousel-caption {
-    margin-bottom: 150px;
-  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 350px) and (max-width: 500px) {
   .banner {
     height: 250px;
   }
@@ -46,35 +44,35 @@
     & .item img {
       height: 250px;
     }
+  }
 
-    & .carousel-caption {
-      margin-bottom: 50px;
-    }
+  .main-text {
+    width: 325px;
 
     & h1 {
-      font-size: 30px;
+      font-size: 35px;
     }
 
     & h5 {
-      font-size: 20px;
+      font-size: 25px;
     }
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 992px) {
-.banner {
-    height: 375px;
+@media only screen and (min-width: 500px) and (max-width: 585px) {
+  .banner {
+    height: 300px;
   }
 
   .carousel-inner {
 
     & .item img {
-      height: 375px;
+      height: 300px;
     }
+  }
 
-    & .carousel-caption {
-      margin-bottom: 100px;
-    }
+  .main-text {
+    width: 425px;
 
     & h1 {
       font-size: 40px;
@@ -86,18 +84,42 @@
   }
 }
 
+@media only screen and (min-width: 585px) and (max-width: 700px) {
+  .main-text {
+    width: 450px;
 
-// @media only screen and (min-width: 992px) and (max-width: 1200px) {
-//   .album .container .row .col-md-2 {
-//     width: 18%;
-//   }
+    & h1 {
+      font-size: 42px;
+    }
 
-//   .album h3 {
-//     margin: 40px 0px 25px 90px;
-//   }
+    & h5 {
+      font-size: 32px;
+    }
+  }
+}
 
-//   .thumb {
-//     margin-bottom: 25px;
-//   }
-// }
+@media only screen and (min-width: 585px) and (max-width: 992px) {
+  .banner {
+      height: 375px;
+    }
+
+  .carousel-inner {
+
+    & .item img {
+      height: 375px;
+    }
+
+  .main-text {
+    width: 475px;
+
+      & h1 {
+        font-size: 45px;
+      }
+
+      & h5 {
+        font-size: 35px;
+      }
+    }
+  }
+}
 
