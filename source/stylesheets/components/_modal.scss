@@ -17,3 +17,75 @@
     height: 1050px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  #map-modal {
+
+    & .map-image {
+      width: 275px;
+      height: 375px;
+    }
+
+    & .modal-dialog {
+      width: 300px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 725px) {
+  #map-modal {
+
+    & .map-image {
+      width: 400px;
+      height: 600px;
+    }
+
+    & .modal-dialog {
+      width: 425px;
+      height: 625px;
+      margin-left: 125px;
+    }
+  }
+}
+
+@media only screen and (min-width: 635px) and (max-width: 768px) {
+  #map-modal {
+
+    & .map-image {
+      width: 500px;
+      height: 700px;
+    }
+
+    & .modal-dialog {
+      width: 525px;
+      height: 725px;
+      margin-left: 45px;
+    }
+  }
+}
+
+// @media only screen and (min-width: 725px) and (max-width: 768px) {
+//   #map-modal {
+
+//     & .modal-dialog {
+//       margin-left: 65px;
+//     }
+//   }
+// }
+
+@media only screen and (min-width: 725px) and (max-width: 950px) {
+  #map-modal {
+
+    & .map-image {
+      width: 600px;
+      height: 800px;
+    }
+
+    & .modal-dialog {
+      width: 625px;
+      height: 825px;
+    }
+  }
+}
+

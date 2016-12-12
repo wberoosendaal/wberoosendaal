@@ -72,7 +72,7 @@
   position: relative;
 
   & .clickable-map {
-    background-color: rgba(0, 6, 255, 0.35);
+    background-color: rgba(0, 6, 255, 0.45);
     border-radius: 50%;
     border: 3px solid white;
     height: 100px;
@@ -85,6 +85,7 @@
 
   & .clickable-map:hover{
     cursor: pointer;
+    background-color: rgba(0, 6, 255, 0.6);
   }
 
   & #search-plus {
@@ -101,21 +102,58 @@
   }
 }
 
-@media screen and (max-width: 624px) {
+@media only screen and (min-width: 624px) {
+  .small-map {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  .footer {
+    flex-direction: column;
+  }
+
   .map {
     display: none !important;
   }
 
-  .footer-content {
-    padding: 20px 25px 25px 20px;
+  .small-map {
+    width: 100vw;
+    position: relative;
 
-    & h6 {
-      margin: 75px -65px 0px 0px;
+    & .clickable-map-small {
+      background-color: rgba(0, 6, 255, 0.45);
+      border-radius: 50%;
+      border: 3px solid white;
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: 130px;
     }
+
+    & .clickable-map-small:hover {
+      cursor: pointer;
+      background-color: rgba(0, 6, 255, 0.6);
+    }
+
+    & #search-plus {
+      position: absolute;
+      font-size: 50px;
+      left: 27px;
+      top: 23px;
+    }
+  }
+
+  .footer-content h6 {
+    margin: 75px -65px 15px 0px;
   }
 }
 
-@media only screen and (min-width: 624px) and (max-width: 762px) {
+@media only screen and (min-width: 624px) and (max-width: 765px) {
   .footer-content {
     width: 100%;
   }
@@ -123,13 +161,22 @@
   .map {
 
     & .clickable-map {
-      left: 204px;
-      top: 272px;
+      left: 223px;
+      top: 288px;
+      height: 75px;
+      width: 75px;
+    }
+
+    & #search-plus {
+      position: absolute;
+      font-size: 40px;
+      left: 18px;
+      top: 15px;
     }
   }
 }
 
-@media only screen and (min-width: 760px) and (max-width: 880px) {
+@media only screen and (min-width: 765px) and (max-width: 880px) {
   .map {
 
     & .clickable-map {
@@ -151,6 +198,14 @@
     & .clickable-map {
       left: 200px;
       top: 275px;
+      height: 75px;
+      width: 75px;
+    }
+
+    & #search-plus {
+      font-size: 40px;
+      left: 18px;
+      top: 15px;
     }
   }
 }
