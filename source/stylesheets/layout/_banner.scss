@@ -1,8 +1,12 @@
 .banner {
   width: 100vw;
-  height: 500px;
-  background-color: #6abe71;
+  height: auto;
+  background-color: #7ebe6a;
   position: relative;
+
+  & img {
+    width: 100vw;
+  }
 }
 
 .main-text {
@@ -26,100 +30,40 @@
   }
 }
 
-.carousel-inner {
-
-  & .item img {
-    height: 500px;
-    width: 100vw;
-  }
-}
-
 @media only screen and (min-width: 350px) and (max-width: 500px) {
   .banner {
-    height: 250px;
-  }
 
-  .carousel-inner {
-
-    & .item img {
-      height: 250px;
-    }
-  }
-
-  .main-text {
-    width: 325px;
-
-    & h1 {
-      font-size: 35px;
-    }
-
-    & h5 {
-      font-size: 25px;
+    & img {
+      height: 235px;
     }
   }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 585px) {
   .banner {
-    height: 300px;
-  }
 
-  .carousel-inner {
-
-    & .item img {
-      height: 300px;
-    }
-  }
-
-  .main-text {
-    width: 425px;
-
-    & h1 {
-      font-size: 40px;
-    }
-
-    & h5 {
-      font-size: 30px;
+    & img {
+      height: 275px;
     }
   }
 }
 
-@media only screen and (min-width: 585px) and (max-width: 700px) {
-  .main-text {
-    width: 450px;
-
-    & h1 {
-      font-size: 42px;
-    }
-
-    & h5 {
-      font-size: 32px;
-    }
-  }
-}
-
-@media only screen and (min-width: 585px) and (max-width: 992px) {
+@media only screen and (min-width: 585px) and (max-width: 725px) {
   .banner {
-      height: 375px;
-    }
 
-  .carousel-inner {
-
-    & .item img {
-      height: 375px;
-    }
-
-  .main-text {
-    width: 475px;
-
-      & h1 {
-        font-size: 45px;
-      }
-
-      & h5 {
-        font-size: 35px;
-      }
+    & img {
+      height: 325px;
     }
   }
 }
+
+@media only screen and (min-width: 725px) and (max-width: 992px) {
+  .banner {
+
+    & img {
+      height: 425px;
+    }
+  }
+}
+
 
